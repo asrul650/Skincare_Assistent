@@ -1,0 +1,19 @@
+Options -Indexes
+
+# Hanya izinkan file gambar
+<FilesMatch "(?i)\.(jpg|jpeg|png|gif)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Blokir akses ke semua file lainnya
+<FilesMatch "(?i)^.*$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Izinkan akses ke folder products
+<DirectoryMatch "^products/">
+    Order Allow,Deny
+    Allow from all
+</DirectoryMatch> 

@@ -1,0 +1,13 @@
+ErrorDocument 404 /pages/404.html
+RewriteEngine On
+RewriteBase /
+
+# Redirect dari root ke home.html
+RewriteRule ^$ pages/home.html [L]
+
+Options -Indexes
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule> 

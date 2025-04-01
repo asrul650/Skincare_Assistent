@@ -1,0 +1,17 @@
+{
+    "name": "lenovo/cobacoding",
+    "autoload": {
+        "psr-4": {
+            "Lenovo\\Cobacoding\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Asrul Raditio",
+            "email": "tioasrul1234@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
